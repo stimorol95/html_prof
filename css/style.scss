@@ -80,10 +80,10 @@
     font-weight: 700;
     font-size: 32px;
   }
-}
 
-.pink {
-  color: #F16D7F;
+  &__subtitle_color {
+    color: #F16D7F;
+  }
 }
 
 .content {
@@ -115,6 +115,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    color: #F16D7F;
   }
 
   &__subtitle {
@@ -133,18 +134,20 @@
 
 }
 
-.item {
+.item-content {
 
   &__inner {
     margin-left: 28px;
   }
 }
 
-
 .products {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+
+  &__inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
 
   &__heading {
     text-align: center;
@@ -172,20 +175,60 @@
     flex-flow: wrap;
     list-style-type: none;
     justify-content: center;
-    background: #F8F8F8;
   }
 
   &__button {
     display: flex;
-    margin-top: 49px;
+    margin-top: 15px;
     margin-bottom: 95px;
     padding: 14px 35px;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-    border: 1px solid #FF6A6A;
+    outline: 1px solid #FF6A6A;
     background-color: white;
     align-items: flex-end;
+    border: none;
+  }
+}
+
+.products-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 51px 0 64px 0;
+
+  &__inner {
+    display: flex;
+    align-items:center;
+    width: 31%;
+  }
+
+  &__filter {
+    padding-left: 15px;
+    padding-right: 11px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+.products-sort {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    padding: 0 10px 0 28px;
+    font-weight: 400;
   }
 }
 
@@ -194,6 +237,8 @@
   &__inner {
     max-width: 360px;
     margin-right: 20px;
+    margin-bottom: 30px;
+    background: #F8F8F8;
   }
 
   &__link {
@@ -207,6 +252,7 @@
     line-height: 16px;
     color: #000000;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   &__txt {
@@ -215,7 +261,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;
+    color: #9F9F9F;
     padding-right: 30px;
     max-width: 420px;
   }
@@ -227,6 +273,35 @@
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+  }
+}
+
+.products-nav {
+
+  &__inner {
+    padding: 48px 0 96px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__outline {
+    outline: 1px solid #EBEBEB;
+    padding: 14px;
+  }
+
+  &__button {
+    margin: 0 12px;
+    background: #FFFFFF;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+    color: #9F9F9F;
+  }
+
+  &__button_active {
+    color: #EF5B70;
   }
 }
 
@@ -272,7 +347,6 @@
 }
 
 .feedback {
-
 
   &__background {
     position: relative;
@@ -368,7 +442,7 @@
 }
 
 .feedback__background::after {
-  background: url(../img/sea.png) no-repeat;
+  background: url(../img/sea.png) 100% 100% no-repeat;
   content: "";
   opacity: 0.5;
   top: -100px;
@@ -380,10 +454,66 @@
   background-size: 100%;
 }
 
+
+.catalog-header {
+  height: 148px;
+  background: #F8F3F4;
+
+  &__inner {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+}
+
+.breadcrumbs {
+  list-style: none;
+
+  &__inner {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__nav {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #636363;
+    text-transform: uppercase;
+    padding-left: 5px;
+    text-decoration: none;
+  }
+
+  &__link:before {
+    content: "/\00a0";
+    color: #636363;
+    font-weight: 300;
+  }
+
+  &__nav a {
+    text-decoration: none;
+  }
+
+  &__link_current {
+    color: #f16d7f;
+    font-weight: 700;
+  }
+}
+
+
 .footer {
   background: #222224;
 
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
