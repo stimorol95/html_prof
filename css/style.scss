@@ -609,14 +609,14 @@ $second-gray:#9F9F9F;
   &__button {
     padding: 10px 50px 10px 25px;
     display: flex;
-    margin-bottom: 65px;
-  }
-
-  &__button_title {
-    margin-left: 23px;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+    margin-bottom: 65px;
+  }
+
+  &__cart {
+    margin-right: 23px;
   }
 }
 
