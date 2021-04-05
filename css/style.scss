@@ -1,3 +1,12 @@
+$primary-pink:#F16D7F;
+$primary-black:#222222;
+$second-black: #222224;
+$primary-white: #FFFFFF;
+$second-white: #FBFBFB;
+$primary-gray:#636363;
+$second-gray:#9F9F9F;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +20,7 @@
 }
 
 .header {
-  background: #222222;
+  background: $primary-black;
 
   &__inner {
     display: flex;
@@ -64,13 +73,13 @@
 
   &__text {
     width: 50%;
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $primary-pink;
   }
 
   &__title {
     font-weight: 900;
     font-size: 48px;
-    color: #222222;
+    color: $primary-black;
     text-transform: uppercase;
     padding-left: 16px;
 
@@ -82,7 +91,7 @@
   }
 
   &__subtitle_color {
-    color: #F16D7F;
+    color: $primary-pink;
   }
 }
 
@@ -115,14 +124,14 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    color: #F16D7F;
+    color: $primary-pink;
   }
 
   &__subtitle {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #FFFFFF;
+    color: $primary-white;
     text-transform: uppercase;
     font-weight: 400;
   }
@@ -139,6 +148,16 @@
   &__inner {
     margin-left: 28px;
   }
+}
+
+.button {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  outline: 1px solid #FF6A6A;
+  background: $primary-white;
+  border: none;
 }
 
 .products {
@@ -158,7 +177,7 @@
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    color: #222222;
+    color: $primary-black;
     padding-bottom: 6px;
   }
 
@@ -166,7 +185,7 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
-    color: #9F9F9F;
+    color: $second-gray;
     padding-bottom: 57px;
   }
 
@@ -178,17 +197,13 @@
   }
 
   &__button {
-    display: flex;
     margin-top: 15px;
     margin-bottom: 95px;
     padding: 14px 35px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    outline: 1px solid #FF6A6A;
-    background-color: white;
-    align-items: flex-end;
-    border: none;
+  }
+
+  &__margin {
+    margin: 128px 0;
   }
 }
 
@@ -200,7 +215,7 @@
 
   &__inner {
     display: flex;
-    align-items:center;
+    align-items: center;
     width: 31%;
   }
 
@@ -225,7 +240,7 @@
   &__title {
     font-size: 14px;
     line-height: 17px;
-    color: #6F6E6E;
+    color: $primary-gray;
     text-transform: uppercase;
     padding: 0 10px 0 28px;
     font-weight: 400;
@@ -241,27 +256,28 @@
     background: #F8F8F8;
   }
 
-  &__link {
-    text-decoration: none;
-  }
-
   &__title {
     padding-left: 18px;
     padding-top: 25px;
     font-size: 13px;
     line-height: 16px;
-    color: #000000;
+    color: $primary-black;
     text-transform: uppercase;
     font-weight: 700;
   }
 
-  &__txt {
+  &__title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__text {
     padding-left: 18px;
     padding-top: 13px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #9F9F9F;
+    color: $second-gray;
     padding-right: 30px;
     max-width: 420px;
   }
@@ -272,7 +288,7 @@
     padding-bottom: 20px;
     font-size: 16px;
     line-height: 19px;
-    color: #F16D7F;
+    color: $primary-pink;
   }
 }
 
@@ -291,13 +307,13 @@
 
   &__button {
     margin: 0 12px;
-    background: #FFFFFF;
+    background: $primary-white;
     border: none;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     outline: none;
-    color: #9F9F9F;
+    color: $second-gray;
   }
 
   &__button_active {
@@ -306,7 +322,7 @@
 }
 
 .features {
-  background: #222224;
+  background: $second-black;
 
   &__items {
     display: flex;
@@ -324,24 +340,24 @@
   }
 
   &__icon {
-    fill: #F16D7F;
+    fill: $primary-pink;
   }
 
   &__title {
     font-size: 20px;
     line-height: 24px;
-    color: #FBFBFB;
+    color: $second-white;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 16px;
   }
 
-  &__txt {
+  &__text {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #FBFBFB;
+    color: $second-white;
     max-width: 310px;
   }
 }
@@ -371,17 +387,18 @@
     background-color: rgba(0, 0, 0, 0);
   }
 
-  &__txt {
+  &__text {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    color: #222224;
+    color: $second-black;
+    font-weight: 400;
   }
 
   &__check {
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 155px;
     padding-right: 80px;
   }
 
@@ -389,7 +406,7 @@
     font-size: 24px;
     line-height: 40px;
     text-align: center;
-    color: #222224;
+    color: $second-black;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-left: 10px;
@@ -402,7 +419,7 @@
     font-size: 18px;
     line-height: 40px;
     text-align: center;
-    color: #222224;
+    color: $second-black;
     line-height: 24px;
     padding-left: 10px;
     font-weight: 500;
@@ -416,22 +433,22 @@
     width: 262px;
     font-size: 14px;
     line-height: 17px;
-    color: #222224;
+    color: $second-black;
     opacity: 0.67;
     padding: 15px 0 15px 22px;
-    background-color: #e1e1e1;
+    background-color: #E1E1E1;
     border-radius: 23px 0 0 23px;
     border: none;
     outline: none;
   }
 
-  &__btn {
+  &__button {
     width: 100px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #ffffff;
-    background: #f16d7f;
+    color: $primary-white;
+    background: $primary-pink;
     padding: 15px;
     border-radius: 0 23px 23px 0;
     border: none;
@@ -445,7 +462,7 @@
   background: url(../img/sea.png) 100% 100% no-repeat;
   content: "";
   opacity: 0.5;
-  top: -100px;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
@@ -468,7 +485,7 @@
   &__title {
     font-size: 24px;
     line-height: 29px;
-    color: #F16D7F;
+    color: $primary-pink;
     text-transform: uppercase;
     font-weight: 500;
   }
@@ -487,7 +504,7 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 300;
-    color: #636363;
+    color: $primary-gray;
     text-transform: uppercase;
     padding-left: 5px;
     text-decoration: none;
@@ -495,7 +512,7 @@
 
   &__link:before {
     content: "/\00a0";
-    color: #636363;
+    color: $primary-gray;
     font-weight: 300;
   }
 
@@ -504,28 +521,130 @@
   }
 
   &__link_current {
-    color: #f16d7f;
+    color: $primary-pink;
     font-weight: 700;
   }
 }
 
 
+.merch {
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #F7F7F7;
+    padding-bottom: 60px;
+    outline: 1px solid #EAEAEA;
+  }
+
+  &__button {
+    background: rgba(42, 42, 42, 0.15);
+    padding: 13px 17px;
+    font-size: 30px;
+    position: absolute;
+  }
+
+  &__button_left {
+    left: 0px;
+  }
+
+  &__button_right {
+    right: 0px;
+  }
+}
+
+.merch-card {
+
+  &__inner {
+    margin-top: -80px;
+    outline: 1px solid #EAEAEA;
+    text-align: center;
+    position: relative;
+    background: $primary-white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__category {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding: 64px 0 27px 0;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    padding: 12px 0 48px 0;
+  }
+
+  &__text {
+    max-width: 550px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    padding-bottom: 32px;
+  }
+
+  &__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding-bottom: 65px;
+    width: 641px;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__button {
+    padding: 10px 50px 10px 25px;
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 65px;
+  }
+
+  &__cart {
+    margin-right: 23px;
+  }
+}
+
+.merch-sort {
+
+  &__inner {
+    padding: 65px 0 50px 0;
+  }
+}
+
+
 .footer {
-  background: #222224;
+  background: $second-black;
 
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
+    align-items: center;
+    padding: 24px 0;
   }
 
-  &__txt {
+  &__text {
     font-size: 16px;
-    color: #FBFBFB;
+    color: $second-white;
   }
 
   &__item {
     text-decoration: none;
-    fill: #FFFFFF;
+    fill: $primary-white;
   }
 }
