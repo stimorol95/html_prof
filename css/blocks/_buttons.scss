@@ -6,6 +6,12 @@
     border: none;
   }
 
+  .link {
+    @include flexible;
+    cursor: pointer; 
+  }
+
+
   .fas {
     cursor: pointer;
   }

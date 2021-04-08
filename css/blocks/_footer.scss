@@ -14,7 +14,7 @@
   
     &__item {
       text-decoration: none;
-      fill: $primary-white;
+      fill: $primary-white; 
 
       &:hover {
         fill: $primary-pink;
@@ -24,11 +24,9 @@
 
     &__icon {
       fill: #000000;
-      
-
-      &:hover {
-        fill: $primary-white;
-        transition: 0.5s;
-      }
     }
+  }
+
+  .footer__item:hover .footer__icon {
+    fill: $primary-white;
   }

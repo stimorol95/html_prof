@@ -41,13 +41,15 @@
         margin-left: 20px;
         margin-right: 29px;
         fill: $primary-white;
-
-        &:hover {
-            fill: $primary-pink;
-            transition: 0.5s;
-        }
+        text-decoration: none;
     }
 }
+
+.registration__button:hover .registration__arrow {
+   
+    fill: $primary-pink;
+}
+
 
 .advantages {
 
