@@ -1,0 +1,37 @@
+.header {
+    background: $primary-black;
+  
+    &__inner {
+      @include flexible;
+      padding: 18px 0;
+    }
+  
+    &__left,
+    &__right {
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    &__button {
+      background: none;
+      outline: none;
+      border: none;
+      fill: #E8E8E8;
+      cursor: pointer;
+    }
+  }
+  
+  .header-left {
+  
+    &__button {
+      margin-left: 41px;
+    
+    }
+  }
+  
+  .header-right {
+  
+    &__button {
+      margin-left: 33px;
+    }
+  }

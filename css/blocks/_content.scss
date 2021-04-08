@@ -1,0 +1,54 @@
+.content {
+
+    &__inner {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  
+    &__item {
+      display: flex;
+      margin-bottom: 30px;
+      flex-flow: column wrap;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__women,
+    &__men,
+    &__kids,
+    &__accesories {
+      position: absolute;
+
+      
+    }
+  
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $primary-pink;
+    }
+  
+    &__subtitle {
+      @include text_second-size ($primary-white);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  
+    &__photo {
+      filter: brightness(40%);
+      z-index: -1;
+    }
+  
+  }
+  
+  .item-content {
+  
+    &__inner {
+      margin-left: 28px;
+    }
+  }
