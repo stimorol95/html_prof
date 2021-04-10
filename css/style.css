@@ -11,6 +11,11 @@
   margin: 0 auto;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+}
+
 .button {
   font-size: 16px;
   line-height: 19px;
@@ -19,6 +24,19 @@
   outline: 1px solid #FF6A6A;
   background: #FFFFFF;
   border: none;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .fas {
@@ -164,12 +182,56 @@
   cursor: pointer;
 }
 
+.header-drop__close {
+  text-align: right;
+  padding: 16px 16px 8px;
+}
+
+.header-drop__list {
+  padding-left: 34px;
+}
+
+.header-drop__text {
+  padding-left: 34px;
+  padding-bottom: 24px;
+}
+
+.header-drop__sub-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.header-drop__item-title {
+  padding: 0;
+}
+
+.header-drop__item-link {
+  line-height: 33px;
+}
+
+.header .burger__media {
+  display: none;
+  line-height: 25px;
+}
+
 .header-left__button {
   margin-left: 41px;
 }
 
 .header-right__button {
   margin-left: 33px;
+}
+
+@media (max-width: 1040px) {
+  .header {
+    padding: 0 20px;
+  }
 }
 
 .banner {
@@ -186,7 +248,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 764px;
+  min-height: 100vh;
   background-image: url(../img/men_jacket.jpg);
   background-repeat: no-repeat;
   background-position: center left -180px;
@@ -713,11 +775,14 @@
   line-height: 19px;
   color: #F26376;
   padding: 10px 50px 10px 25px;
+  font-weight: 400;
+  margin-bottom: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 400;
-  margin-bottom: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .merch-card__button:hover {
@@ -728,14 +793,20 @@
 }
 
 .merch-card__cart {
-  margin-right: 23px;
+  color: #F16D7F;
   fill: #EF5B70;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.merch-card__cart:hover {
+.merch-card__button:hover .merch-card__cart {
+  color: #FFFFFF;
   fill: #FFFFFF;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .merch-sort__inner {
@@ -980,12 +1051,11 @@
   margin-left: 20px;
   margin-right: 29px;
   fill: #FFFFFF;
+  text-decoration: none;
 }
 
-.registration__arrow:hover {
+.registration__button:hover .registration__arrow {
   fill: #F16D7F;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .advantages__inner {
@@ -1248,9 +1318,7 @@
   fill: #000000;
 }
 
-.footer__icon:hover {
+.footer__item:hover .footer__icon {
   fill: #FFFFFF;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

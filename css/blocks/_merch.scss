@@ -82,9 +82,10 @@
     &__button {
       @include text_second-size (#F26376);
       padding: 10px 50px 10px 25px;
-      display: flex;
       font-weight: 400;
       margin-bottom: 65px;
+      display: flex;
+      justify-content: space-between;
 
       &:hover {
         background: $primary-pink;
@@ -94,16 +95,20 @@
     }
   
     &__cart {
-      margin-right: 23px;
-      fill: #EF5B70;
-
-      &:hover {
-        fill: $primary-white;
-        transition: 0.5s;
-      }
+      color: $primary-pink;
+      fill: #EF5B70;  
+      text-decoration: none;
+      display: flex;
+      align-items: center;
     }
   }
   
+  .merch-card__button:hover .merch-card__cart {
+    color: $primary-white;
+    fill: $primary-white;
+  }
+
+
   .merch-sort {
   
     &__inner {

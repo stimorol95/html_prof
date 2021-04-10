@@ -19,6 +19,39 @@
       fill: #E8E8E8;
       cursor: pointer;
     }
+
+    &-drop {
+
+      &__close {
+         text-align: right;
+         padding: 16px 16px 8px;
+      }
+      &__list {
+         padding-left: 34px;
+      }
+      &__text {
+         padding-left: 34px;
+         padding-bottom: 24px;
+      }
+      &__sub-item {
+         display: flex;
+         flex-direction: column;
+         padding-left: 20px;
+      }
+      &__item {
+         &-title {
+           padding: 0;
+         
+         }
+         &-link {
+            line-height: 33px;
+         }
+      }
+   }
+   .burger__media{
+      display: none;
+      line-height:  25px;
+   }
   }
   
   .header-left {
@@ -33,5 +66,11 @@
   
     &__button {
       margin-left: 33px;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .header {
+      padding: 0 20px;
     }
   }
