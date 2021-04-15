@@ -85,7 +85,9 @@
       font-weight: 400;
       margin-bottom: 65px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      margin-top: 40px;
 
       &:hover {
         background: $primary-pink;
@@ -100,6 +102,7 @@
       text-decoration: none;
       display: flex;
       align-items: center;
+      margin-right: 12px;
     }
   }
   
