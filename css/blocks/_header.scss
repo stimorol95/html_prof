@@ -3,12 +3,11 @@
   top: 0;
   z-index: 100;
   position: sticky;
-  /* Safari */
   position: -webkit-sticky;
 
   &__inner {
     @include flexible;
-    padding: 18px 0;
+    padding: 20px 0;
   }
 
   &__left,
@@ -105,16 +104,5 @@
 
   &__button {
     margin-left: 33px;
-  }
-}
-
-@media (max-width: 1040px) {
-  .header {
-    padding: 0 20px;
-
-    &__inner {
-      max-width: 600px;
-      padding: 18px 0;
-    }
   }
 }

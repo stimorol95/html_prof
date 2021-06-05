@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/6de7978f33.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="page page_flex">
     <header class="header">
         <div class="container header__inner">
             <div class="header__left header-left">
@@ -29,7 +29,7 @@
                 </button>
             </div>
             <div class="header__right header-right">
-                <button id="menu" class="header__button header-right__button header-right__menu">
+                <button id="menu" class="header__button header-right__menu">
                     <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
                     </svg>
@@ -61,8 +61,7 @@
         <nav class="header-drop">
             <div class="header-drop__inner" id="dropMenu">
                 <div class="header-drop__close" id="close">
-                    <svg width="12" height="12" viewBox="0 0 18 18"
-                        fill="#575757" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="12" height="12" viewBox="0 0 18 18" fill="#575757" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
                     </svg>
@@ -109,7 +108,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main main_flex">
         <section class="banner">
             <div class="container banner__content">
                 <div class="banner__text">
@@ -121,29 +120,29 @@
         </section>
 
         <section class="content">
-            <div class="container content__inner item-content">
-                <div class="content__item">
+            <div class="container content__inner">
+                <div class="content__item content__item_short">
                     <div class="content__women">
                         <p class="content__subtitle">30% off</p>
                         <h2 class="content__title">for women</h2>
                     </div>
                     <img class="content__photo" src="img/women.jpg" alt="women" height="260">
                 </div>
-                <div class="content__item item-content__inner">
+                <div class="content__item content__item_short">
                     <div class="content__men">
                         <p class="content__subtitle">hot deal</p>
                         <h2 class="content__title">for men</h2>
                     </div>
                     <img class="content__photo" src="img/men.jpg" alt="men" height="260">
                 </div>
-                <div class="content__item item-content__inner">
+                <div class="content__item content__item_short">
                     <div class="content__kids">
                         <p class="content__subtitle">new arrivals</p>
                         <h2 class="content__title">for kids</h2>
                     </div>
                     <img class="content__photo" src="img/kids.jpg" alt="kids" height="260">
                 </div>
-                <div class="content__item">
+                <div class="content__item content__item_long">
                     <div class="content__accesories">
                         <p class="content__subtitle">luxirous &amp;&nbsp;trendy</p>
                         <h2 class="content__title">accesories</h2>
@@ -306,7 +305,7 @@
                     </p>
                 </div>
                 <div class="feedback__check">
-                    <h5 class="feedback__title">subscribe</h5>
+                    <p class="feedback__title">subscribe</p>
                     <p class="feedback__subtitle">for our newletter and promotion</p>
                     <form action="#" class="feedback__form">
                         <input class="feedback__email" type="email" placeholder="Enter Your Email" required>
@@ -317,7 +316,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer footer_flex">
         <div class="container">
             <div class="footer__inner">
                 <p class="footer__text">&copy; 2021 Brand All Rights Reserved.</p>
@@ -338,7 +337,7 @@
                             </g>
                             <defs>
                                 <clipPath>
-                                    <rect width="14.8991" height="17" form=late(8.68555 8)" />
+                                    <rect width="15" height="17" transform="translate(8.68555 8)"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -352,7 +351,7 @@
                             </g>
                             <defs>
                                 <clipPath>
-                                    <rect width="11.9193" height="16" form=late(10.4082 8)" />
+                                    <rect width="12" height="16" transform="translate(10.4082 8)"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -366,7 +365,7 @@
                             </g>
                             <defs>
                                 <clipPath>
-                                    <rect width="15.8924" height="16" form=late(8.1582 8)" />
+                                    <rect width="16" height="16" transform="translate(8.1582 8)"/>
                                 </clipPath>
                             </defs>
                         </svg>
