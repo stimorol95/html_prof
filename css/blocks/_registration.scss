@@ -78,10 +78,10 @@
 
     &__list {
         padding-left: 30px;
-        list-style-image: url(/img/check.png);
     }
 
     &__item {
+        list-style-image: url('/img/check.png');
         font-weight: 300;
         font-size: 24px;
         line-height: 29px;

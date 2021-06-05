@@ -11,7 +11,7 @@
 
     &__item {
         display: flex;
-        width: 652px;
+        max-width: 652px;
         background: $primary-white;
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
         margin-bottom: 40px;

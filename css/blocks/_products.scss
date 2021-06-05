@@ -2,6 +2,7 @@
 
   &__inner {
     text-align: center;
+    margin: 51px 0 64px 0;
   }
 
   &__margin {
@@ -61,8 +62,6 @@ summary::-webkit-details-marker {
 .products-menu {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 51px 0 64px 0;
   position: relative;
 
   & summary::marker {
@@ -72,8 +71,7 @@ summary::-webkit-details-marker {
   &__inner {
     display: flex;
     align-items: center;
-    width: 31%;
-
+    width: 31%
   }
 
   &__filter {
@@ -85,7 +83,6 @@ summary::-webkit-details-marker {
     top: 0;
     z-index: 15;
     background: $primary-white;
-
   }
 
 
@@ -140,7 +137,7 @@ summary::-webkit-details-marker {
 
   &__details {
     margin-top: 18px;
-    width: 330px;
+    max-width: 130px;
 
     &::before {
       content: "";
@@ -183,13 +180,14 @@ summary::-webkit-details-marker {
 }
 
 .products-sort {
-  z-index: 100;
+  z-index: 49;
 
   &__inner {
-    display: flex;
     align-items: center;
     z-index: 100;
-    width: 360px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
   }
 
   &__title {
@@ -197,13 +195,15 @@ summary::-webkit-details-marker {
     text-transform: uppercase;
     padding: 0 10px 0 28px;
     font-weight: 400;
-    display: block;
     outline: none;
     cursor: pointer;
+    max-width: 100%;
   }
 
   &__details {
     position: relative;
+    display: block;
+   
 
     & summary::marker {
       display: none;
@@ -234,6 +234,7 @@ summary::-webkit-details-marker {
     padding: 9px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     background: $primary-white;
+    width: 120px;
   }
 
   &__label {
@@ -330,6 +331,12 @@ summary::-webkit-details-marker {
 }
 
 .products-nav {
+
+  &_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__inner {
     padding: 48px 0 96px 0;
