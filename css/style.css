@@ -440,6 +440,11 @@ summary::-webkit-details-marker {
   overflow: hidden;
 }
 
+.content__item:hover {
+  -webkit-box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
 .content__item_long {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -546,8 +551,6 @@ summary::-webkit-details-marker {
   color: #FFFFFF;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 summary::-webkit-details-marker {
@@ -1177,6 +1180,7 @@ summary::-webkit-details-marker {
 
 .cart__img {
   margin: 28px 22px 0 0;
+  cursor: pointer;
 }
 
 .cart__buttons {

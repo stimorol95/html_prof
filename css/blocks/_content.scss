@@ -13,6 +13,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    &:hover {
+      box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.15);
+    }
 
     &_long {
       grid-column: 1/4;
